@@ -1,22 +1,15 @@
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
 
-    import java.sql.*;
-    import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
-    public class Main {
-        static final String DB_URL = "jdbc:mysql://localhost/TUTORIALSPOINT";
-        static final String USER = "root";
-        static final String PASS = "user";
-        static final String QUERY = "SELECT id, first, last, age FROM Employees";
+public class Main {
 
         public static void main(String[] args) {
 
-            WelcomeClass mainClass = new WelcomeClass();
 
-//            try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS)){
-//
-//            } catch (SQLException e){
-//                e.printStackTrace();
-//            }
 
         }
     }
