@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="SimpleCalculatorTest" time="0.013" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="SimpleCalculatorTest" time="0.021" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="D:\Soft for programming\Java libs\jdks\openjdk-18.0.1.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Albert\AppData\Local\Temp\surefire2816770035926674175\surefirebooter-20220901004007584_3.jar C:\Users\Albert\AppData\Local\Temp\surefire2816770035926674175 2022-09-01T00-40-07_112-jvmRun1 surefire-20220901004007584_1tmp surefire_0-20220901004007584_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Albert\AppData\Local\Temp\surefire14195540451565941696\surefirebooter-20220901013716573_3.jar C:\Users\Albert\AppData\Local\Temp\surefire14195540451565941696 2022-09-01T01-37-16_114-jvmRun1 surefire-20220901013716573_1tmp surefire_0-20220901013716573_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Albert\IdeaProjects\jdbcStudy\target\test-classes;C:\Users\Albert\IdeaProjects\jdbcStudy\target\classes;C:\Users\Albert\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\Albert\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\Albert\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\Albert\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;C:\Users\Albert\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Albert\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\Albert\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Albert\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Albert\AppData\Local\Temp\surefire2816770035926674175\surefirebooter-20220901004007584_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Albert\AppData\Local\Temp\surefire14195540451565941696\surefirebooter-20220901013716573_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.1.1+2-6"/>
@@ -58,10 +58,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="test" classname="SimpleCalculatorTest" time="0.003">
+  <testcase name="test" classname="SimpleCalculatorTest" time="0.002">
     <system-out><![CDATA[This test runs
 ]]></system-out>
   </testcase>
-  <testcase name="threePlusTenEqualTherteen" classname="SimpleCalculatorTest" time="0.002"/>
+  <testcase name="divideByZeroExceptionTest" classname="SimpleCalculatorTest" time="0.005"/>
+  <testcase name="threePlusTenEqualThirteen" classname="SimpleCalculatorTest" time="0.002"/>
   <testcase name="twoPlusTwoShouldEqualFour" classname="SimpleCalculatorTest" time="0.003"/>
 </testsuite>

@@ -1,24 +1,32 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class SimpleCalculatorTest {
 
-    @Test
-    void twoPlusTwoShouldEqualFour(){
-        SimpleCalculator simpleCalculator = new SimpleCalculator();
-        assertEquals(4, simpleCalculator.add(2,2));
+    SimpleCalculator simpleCalculator;
+    @BeforeEach
+    void init(){
+        simpleCalculator = new SimpleCalculator();
     }
 
     @Test
-    void threePlusTenEqualTherteen(){
-        SimpleCalculator simpleCalculator = new SimpleCalculator();
-        assertEquals(13, simpleCalculator.add(3,10));
+    void twoPlusTwoShouldEqualFour(){
+        int expected = 4;
+        int actual = simpleCalculator.add(2,2);
+        assertEquals(expected, actual, "Testing .add() method with arguments 2, 2");
+    }
+
+    @Test
+    void threePlusTenEqualThirteen(){
+        int expected = 13;
+        int actual = simpleCalculator.add(3,10);
+        assertEquals(expected, actual, "Testing .add() method with arguments 3, 10");
     }
 
     @Test
     void divideByZeroExceptionTest(){
-        SimpleCalculator simpleCalculator = new SimpleCalculator();
         assertThrows(ArithmeticException.class, () -> simpleCalculator.divide(1, 0), "Divide by zero exception");
     }
     //ArithmeticException.class
